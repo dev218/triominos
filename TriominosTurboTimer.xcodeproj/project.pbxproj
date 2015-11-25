@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		843E4F541C05C67400410B2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E4F531C05C67400410B2A /* AppDelegate.swift */; };
+		843E4F561C05C67400410B2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E4F551C05C67400410B2A /* ViewController.swift */; };
+		843E4F591C05C67400410B2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843E4F571C05C67400410B2A /* Main.storyboard */; };
+		843E4F5B1C05C67400410B2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843E4F5A1C05C67400410B2A /* Assets.xcassets */; };
+		843E4F5E1C05C67400410B2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843E4F5C1C05C67400410B2A /* LaunchScreen.storyboard */; };
+		843E4F691C05C67400410B2A /* TriominosTurboTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E4F681C05C67400410B2A /* TriominosTurboTimerTests.swift */; };
+		843E4F741C05EFBD00410B2A /* clock-ticking-2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 843E4F731C05EFBD00410B2A /* clock-ticking-2.wav */; };
+		843E4F781C05FE5F00410B2A /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 843E4F771C05FE5F00410B2A /* ding.wav */; };
+		843E4F7A1C0609C100410B2A /* SettingVewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E4F791C0609C100410B2A /* SettingVewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		843E4F651C05C67400410B2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 843E4F481C05C67300410B2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 843E4F4F1C05C67400410B2A;
+			remoteInfo = TriominosTurboTimer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		843E4F501C05C67400410B2A /* Triominos Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Triominos Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		843E4F531C05C67400410B2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		843E4F551C05C67400410B2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		843E4F581C05C67400410B2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		843E4F5A1C05C67400410B2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		843E4F5D1C05C67400410B2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		843E4F5F1C05C67400410B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843E4F641C05C67400410B2A /* TriominosTurboTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriominosTurboTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		843E4F681C05C67400410B2A /* TriominosTurboTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriominosTurboTimerTests.swift; sourceTree = "<group>"; };
+		843E4F6A1C05C67400410B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843E4F731C05EFBD00410B2A /* clock-ticking-2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "clock-ticking-2.wav"; sourceTree = "<group>"; };
+		843E4F771C05FE5F00410B2A /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
+		843E4F791C0609C100410B2A /* SettingVewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingVewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		843E4F4D1C05C67400410B2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		843E4F611C05C67400410B2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		843E4F471C05C67300410B2A = {
+			isa = PBXGroup;
+			children = (
+				843E4F771C05FE5F00410B2A /* ding.wav */,
+				843E4F731C05EFBD00410B2A /* clock-ticking-2.wav */,
+				843E4F521C05C67400410B2A /* TriominosTurboTimer */,
+				843E4F671C05C67400410B2A /* TriominosTurboTimerTests */,
+				843E4F511C05C67400410B2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		843E4F511C05C67400410B2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				843E4F501C05C67400410B2A /* Triominos Timer.app */,
+				843E4F641C05C67400410B2A /* TriominosTurboTimerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		843E4F521C05C67400410B2A /* TriominosTurboTimer */ = {
+			isa = PBXGroup;
+			children = (
+				843E4F531C05C67400410B2A /* AppDelegate.swift */,
+				843E4F551C05C67400410B2A /* ViewController.swift */,
+				843E4F791C0609C100410B2A /* SettingVewController.swift */,
+				843E4F571C05C67400410B2A /* Main.storyboard */,
+				843E4F5A1C05C67400410B2A /* Assets.xcassets */,
+				843E4F5C1C05C67400410B2A /* LaunchScreen.storyboard */,
+				843E4F5F1C05C67400410B2A /* Info.plist */,
+			);
+			path = TriominosTurboTimer;
+			sourceTree = "<group>";
+		};
+		843E4F671C05C67400410B2A /* TriominosTurboTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				843E4F681C05C67400410B2A /* TriominosTurboTimerTests.swift */,
+				843E4F6A1C05C67400410B2A /* Info.plist */,
+			);
+			path = TriominosTurboTimerTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		843E4F4F1C05C67400410B2A /* TriominosTurboTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 843E4F6D1C05C67400410B2A /* Build configuration list for PBXNativeTarget "TriominosTurboTimer" */;
+			buildPhases = (
+				843E4F4C1C05C67400410B2A /* Sources */,
+				843E4F4D1C05C67400410B2A /* Frameworks */,
+				843E4F4E1C05C67400410B2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TriominosTurboTimer;
+			productName = TriominosTurboTimer;
+			productReference = 843E4F501C05C67400410B2A /* Triominos Timer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		843E4F631C05C67400410B2A /* TriominosTurboTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 843E4F701C05C67400410B2A /* Build configuration list for PBXNativeTarget "TriominosTurboTimerTests" */;
+			buildPhases = (
+				843E4F601C05C67400410B2A /* Sources */,
+				843E4F611C05C67400410B2A /* Frameworks */,
+				843E4F621C05C67400410B2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				843E4F661C05C67400410B2A /* PBXTargetDependency */,
+			);
+			name = TriominosTurboTimerTests;
+			productName = TriominosTurboTimerTests;
+			productReference = 843E4F641C05C67400410B2A /* TriominosTurboTimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		843E4F481C05C67300410B2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = NAT;
+				TargetAttributes = {
+					843E4F4F1C05C67400410B2A = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 82Z3PJ4A3E;
+					};
+					843E4F631C05C67400410B2A = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 843E4F4F1C05C67400410B2A;
+					};
+				};
+			};
+			buildConfigurationList = 843E4F4B1C05C67300410B2A /* Build configuration list for PBXProject "TriominosTurboTimer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 843E4F471C05C67300410B2A;
+			productRefGroup = 843E4F511C05C67400410B2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				843E4F4F1C05C67400410B2A /* TriominosTurboTimer */,
+				843E4F631C05C67400410B2A /* TriominosTurboTimerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		843E4F4E1C05C67400410B2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				843E4F781C05FE5F00410B2A /* ding.wav in Resources */,
+				843E4F741C05EFBD00410B2A /* clock-ticking-2.wav in Resources */,
+				843E4F5E1C05C67400410B2A /* LaunchScreen.storyboard in Resources */,
+				843E4F5B1C05C67400410B2A /* Assets.xcassets in Resources */,
+				843E4F591C05C67400410B2A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		843E4F621C05C67400410B2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		843E4F4C1C05C67400410B2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				843E4F561C05C67400410B2A /* ViewController.swift in Sources */,
+				843E4F541C05C67400410B2A /* AppDelegate.swift in Sources */,
+				843E4F7A1C0609C100410B2A /* SettingVewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		843E4F601C05C67400410B2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				843E4F691C05C67400410B2A /* TriominosTurboTimerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		843E4F661C05C67400410B2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 843E4F4F1C05C67400410B2A /* TriominosTurboTimer */;
+			targetProxy = 843E4F651C05C67400410B2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		843E4F571C05C67400410B2A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				843E4F581C05C67400410B2A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		843E4F5C1C05C67400410B2A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				843E4F5D1C05C67400410B2A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		843E4F6B1C05C67400410B2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		843E4F6C1C05C67400410B2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		843E4F6E1C05C67400410B2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TriominosTurboTimer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nat.TriominosTurboTimer;
+				PRODUCT_NAME = "Triominos Timer";
+			};
+			name = Debug;
+		};
+		843E4F6F1C05C67400410B2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TriominosTurboTimer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nat.TriominosTurboTimer;
+				PRODUCT_NAME = "Triominos Timer";
+			};
+			name = Release;
+		};
+		843E4F711C05C67400410B2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TriominosTurboTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nat.TriominosTurboTimerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TriominosTurboTimer.app/TriominosTurboTimer";
+			};
+			name = Debug;
+		};
+		843E4F721C05C67400410B2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TriominosTurboTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nat.TriominosTurboTimerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TriominosTurboTimer.app/TriominosTurboTimer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		843E4F4B1C05C67300410B2A /* Build configuration list for PBXProject "TriominosTurboTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				843E4F6B1C05C67400410B2A /* Debug */,
+				843E4F6C1C05C67400410B2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		843E4F6D1C05C67400410B2A /* Build configuration list for PBXNativeTarget "TriominosTurboTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				843E4F6E1C05C67400410B2A /* Debug */,
+				843E4F6F1C05C67400410B2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		843E4F701C05C67400410B2A /* Build configuration list for PBXNativeTarget "TriominosTurboTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				843E4F711C05C67400410B2A /* Debug */,
+				843E4F721C05C67400410B2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 843E4F481C05C67300410B2A /* Project object */;
+}
