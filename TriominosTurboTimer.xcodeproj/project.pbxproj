@@ -405,6 +405,7 @@
 				843E4F6F1C05C67400410B2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		843E4F701C05C67400410B2A /* Build configuration list for PBXNativeTarget "TriominosTurboTimerTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +414,7 @@
 				843E4F721C05C67400410B2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

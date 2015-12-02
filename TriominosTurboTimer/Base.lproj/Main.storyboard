@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Triominos Turbo-->
+        <!--Triominos Turbo Timer-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Triominos_Timer" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,12 +21,12 @@
                             <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="bve-Tv-J5W">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twM-I6-eZq">
-                                <rect key="frame" x="123" y="172" width="354" height="256"/>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twM-I6-eZq">
+                                <rect key="frame" x="190" y="172" width="220" height="256"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="354" id="22g-0x-Ts6"/>
+                                    <constraint firstAttribute="width" constant="220" id="22g-0x-Ts6"/>
                                 </constraints>
-                                <state key="normal" image="SandClock"/>
+                                <state key="normal" image="sc8"/>
                                 <connections>
                                     <action selector="onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uFe-xq-JKJ"/>
                                 </connections>
@@ -41,7 +41,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your current timer setting: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rq3-mr-IB3">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your current timer setting: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rq3-mr-IB3">
                                 <rect key="frame" x="20" y="64" width="154" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="24f-nG-zTG"/>
@@ -51,7 +51,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BpS-Lu-Qev">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BpS-Lu-Qev">
                                 <rect key="frame" x="182" y="69" width="27" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -74,7 +74,7 @@
                             <constraint firstItem="uNr-ci-HRu" firstAttribute="top" secondItem="twM-I6-eZq" secondAttribute="bottom" constant="37" id="tCP-8Z-4Xe"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Triominos Turbo" id="H9g-1a-A8s">
+                    <navigationItem key="navigationItem" title="Triominos Turbo Timer" id="H9g-1a-A8s">
                         <barButtonItem key="rightBarButtonItem" image="SettingIcon" style="plain" id="QTb-Tx-vww">
                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
@@ -217,7 +217,7 @@
     </scenes>
     <resources>
         <image name="BackgroundImage" width="480" height="640"/>
-        <image name="SandClock" width="256" height="256"/>
         <image name="SettingIcon" width="21" height="21"/>
+        <image name="sc8" width="256" height="256"/>
     </resources>
 </document>

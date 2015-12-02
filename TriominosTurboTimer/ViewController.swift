@@ -32,7 +32,8 @@ class ViewController: UIViewController {
     var timer: NSTimer?
     var currentTimeLeft: Int = 0
     var audioPlayer: AVAudioPlayer?
-    
+    var sandClockRunningImages: [UIImage] = []
+    var sandClockTurningImages: [UIImage] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +41,8 @@ class ViewController: UIViewController {
         loadSetting()
         timerLabel.text = ""
         settingTimer()
+//        initAnimation()
+        initAnimationImages()
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -53,17 +56,27 @@ class ViewController: UIViewController {
 
     @IBAction func onClick(sender: UIButton) {
         timerLabel.text = String(stringInterpolationSegment: timerDuration)
-        currentTimeLeft = timerDuration
-        if (timer != nil) {
-            timer?.invalidate()
-        }
-        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateLabel", userInfo: nil, repeats: true)
-        if (audioPlayer != nil) {
-            audioPlayer?.stop()
-        }
-        if (tickTackSoundOn) {
-            playSound("clock-ticking-2", numberOfLoops: -1)
-        }
+//        if (currentTimeLeft==0) {
+//            // turn the sand clock upside down
+//            timerButton.imageView!.stopAnimating()
+//            timerButton.imageView!.image = sandClockTurningImages[10]
+//            timerButton.imageView!.animationImages = sandClockTurningImages
+//            timerButton.imageView!.animationDuration = 0.6
+//            timerButton.imageView!.startAnimating()
+//        }
+            currentTimeLeft = timerDuration
+            if (timer != nil) {
+                timer?.invalidate()
+            }
+            timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateLabel", userInfo: nil, repeats: true)
+            if (audioPlayer != nil) {
+                audioPlayer?.stop()
+            }
+            if (tickTackSoundOn) {
+                playSound("clock-ticking-2", numberOfLoops: -1)
+            }
+            animateSandClock(timerDuration)
+        
     }
     
     func settingTimer() {
@@ -114,6 +127,32 @@ class ViewController: UIViewController {
         tickTackSoundOn = defaults.boolForKey(settingKeys.ticktack)
         dingSoundOn = defaults.boolForKey(settingKeys.ding)
         vibrateOn = defaults.boolForKey(settingKeys.vibrate)
+    }
+    
+    func animateSandClock(duration: Int) {
+        timerButton.imageView!.stopAnimating()
+        timerButton.imageView!.animationImages = sandClockRunningImages
+        timerButton.imageView!.animationDuration = Double(duration)
+        timerButton.imageView!.startAnimating()
+    }
+    
+    func initAnimation() {
+        var images: [UIImage] = []
+        for i in 1...7 {
+            images.append(UIImage(named: "sc\(i)")!)
+        }
+        timerButton.imageView!.animationImages = images
+        timerButton.imageView!.animationRepeatCount = 1
+    }
+    
+    func initAnimationImages() {
+        for i in 1...7 {
+            sandClockRunningImages.append(UIImage(named: "sc\(i)")!)
+        }
+//        for i in 1...11 {
+//            sandClockTurningImages.append(UIImage(named: "scr\(i)")!)
+//        }
+        timerButton.imageView!.animationRepeatCount = 1
     }
     
 }
