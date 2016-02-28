@@ -120,13 +120,25 @@ class ViewController: UIViewController {
     func loadSetting() {
         let defaults = NSUserDefaults.standardUserDefaults()
         
-        timerDuration = defaults.integerForKey(settingKeys.duration)
-        if (timerDuration == 0) {
+        if (!defaults.boolForKey("HasLaunchedOnce")) {
+            defaults.setBool(true, forKey: "HasLaunchedOnce")
+            NSUserDefaults.standardUserDefaults().synchronize()
+            
             timerDuration = defaultTimerDuration
+            tickTackSoundOn = true
+            dingSoundOn = true
+            vibrateOn = false
+        } else {
+            timerDuration = defaults.integerForKey(settingKeys.duration)
+//            if (timerDuration == 0) {
+//                timerDuration = defaultTimerDuration
+//            }
+            tickTackSoundOn = defaults.boolForKey(settingKeys.ticktack)
+            dingSoundOn = defaults.boolForKey(settingKeys.ding)
+            vibrateOn = defaults.boolForKey(settingKeys.vibrate)
         }
-        tickTackSoundOn = defaults.boolForKey(settingKeys.ticktack)
-        dingSoundOn = defaults.boolForKey(settingKeys.ding)
-        vibrateOn = defaults.boolForKey(settingKeys.vibrate)
+        
+        
     }
     
     func animateSandClock(duration: Int) {
